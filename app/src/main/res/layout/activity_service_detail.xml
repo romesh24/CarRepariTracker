@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View details"
+                android:textSize="24sp"
+                android:textColor="#2E7D32"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="32dp"/>
+
+            <!-- Details Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp">
+
+                <!-- Details Table Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:divider="@drawable/divider_horizontal"
+                    android:showDividers="middle">
+
+                    <!-- Vehicle Number -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Vehicle Number:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/vehicleNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="NW9732"/>
+                    </LinearLayout>
+
+                    <!-- Customer Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Customer Name:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/customerName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="Romesh"/>
+                    </LinearLayout>
+
+                    <!-- Car Model -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Car Model:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/carModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="Benz"/>
+                    </LinearLayout>
+
+                    <!-- Fuel Type -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fuel Type:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/fuelType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="Petrol"/>
+                    </LinearLayout>
+
+                    <!-- Service Type -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Service Type:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/serviceType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="Oil Change"/>
+                    </LinearLayout>
+
+                    <!-- Service Date -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Service Date:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/serviceDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="08/13/2025"/>
+                    </LinearLayout>
+
+                    <!-- Next Service Date -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Next Service:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/nextServiceDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="10/03/2025"/>
+                    </LinearLayout>
+
+                    <!-- Price -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Price:"
+                            android:textSize="16sp"
+                            android:textColor="#616161"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="textEnd"
+                            tools:text="$2023.00"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:elevation="8dp"/>
+</RelativeLayout>

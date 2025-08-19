@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Car Tec Garage</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_services">Services</string>
+    <string name="title_activity_post_service">Post Service</string>
+    <string name="app_logo">Logo</string>
+    <string name="splash_subtitle">Drive smarter, maintain easier. Never miss a service again.</string>
+
+    <!-- New strings for post service activity -->
+    <string name="customer_name_hint">Customer Name</string>
+    <string name="vehicle_number_hint">Vehicle Number</string>
+    <string name="service_type_hint">Service Type</string>
+    <string name="save_service_button">Save Service</string>
+    <string name="no_services_found">No services found</string>
+
+    <!-- Error messages -->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_vehicle">Invalid vehicle number</string>
+    <string name="view_service">View service</string>
+    <string name="edit_service">Edit service</string>
+    <string name="delete_service">Delete service</string>
+</resources>
